@@ -43,9 +43,8 @@ def gross_per_studio(collection)
    count = 0
    while count < collection.size do
      stu_name = collection[count][:studio]
-     hash[stu_name] = 0
-        binding.pry 
-      if hash[stu_name] == collection[index][:studio]
+        binding.pry
+      if hash[stu_name]
         hash[stu_name] += collection[index][:worldwide_gross]
       end
        count += 1
