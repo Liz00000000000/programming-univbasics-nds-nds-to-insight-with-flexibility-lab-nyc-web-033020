@@ -50,8 +50,8 @@ def gross_per_studio(collection)
       if hash[stu_name] == collection[index][:studio]
         hash[stu_name] += collection[index][:worldwide_gross]
       end
-    end
       index += 1
+    end
     end
   return hash
 end
