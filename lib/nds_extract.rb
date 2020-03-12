@@ -41,6 +41,7 @@ end
 def gross_per_studio(collection)
   hash = { }
    count = 0
+   binding.pry 
    while count < collection.size do
      stu_name = collection[count][:studio]
      hash[stu_name] = 0
