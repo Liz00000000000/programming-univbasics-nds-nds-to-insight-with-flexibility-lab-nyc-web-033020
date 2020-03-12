@@ -45,7 +45,7 @@ def gross_per_studio(collection)
      stu_name = collection[count][:studio]
         binding.pry
       if hash[stu_name]
-        hash[stu_name] += collection[index][:worldwide_gross]
+        hash[stu_name] += collection[count][:worldwide_gross]
       end
        count += 1
     end
