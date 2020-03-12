@@ -34,6 +34,7 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
+  binding.pry
   movies_collection.map { |movie| movie_with_director_name(name, movie)  }
 end
 
