@@ -60,7 +60,8 @@ def movies_with_directors_set(collection)
     count = 0
     while count < collection.size do
       dir_name = collection[count][:name]
-      array << movies_with_director_key(dir_name, collection)
+      dir_movie = collection[count][:movies]
+      array << movies_with_director_key(dir_name, dir_movie)
    count += 1
  end
 
