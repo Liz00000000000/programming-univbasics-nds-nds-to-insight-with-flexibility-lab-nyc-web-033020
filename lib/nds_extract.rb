@@ -49,7 +49,6 @@ def gross_per_studio(collection)
       while index < collection.size do
       if hash[stu_name] == collection[index][:studio]
         hash[stu_name] += collection[index][:worldwide_gross]
-      else nil 
       end
     end
       index += 1
